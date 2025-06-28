@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="login.css"> </head>
 <body>
     <div class="login-container">
-        <h2>Login to CHatbot</h2>
+        <h2>Login to Chat-bot</h2>
         <div class="input-group">
             <input id="email" placeholder="Email address" type="email">
         </div>
@@ -23,14 +23,7 @@
 
     <script>
         // Your Firebase config here
-        const firebaseConfig = {
-            apiKey: "AIzaSyDJDj1gI4K9lxh9hK-jdjBZk3HdV2q_29s",
-            authDomain: "uplyft-chatbot-ad599.firebaseapp.com",
-            projectId: "uplyft-chatbot-ad599",
-            storageBucket: "uplyft-chatbot-ad599.firebasestorage.app",
-            messagingSenderId: "212216394601",
-            appId: "1:212216394601:web:f0861920bfe473f52543f8"
-        };
+        import {firebaseConfig} from './firebaseConfig.js';
 
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
